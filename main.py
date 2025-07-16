@@ -31,19 +31,19 @@ def bmi_calculator_MU():
         bmi = w / (h ** 2)
 
         if  bmi <18.5:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are underweight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are underweight")
 
         elif 18.5 <= bmi < 25:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are normal weight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are normal weight")
 
         elif 25 <= bmi < 30:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are overweight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are overweight")
 
         elif 30 <= bmi < 40:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are obese")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are obese")
 
         elif 40 <= bmi:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are morbidly obese")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are morbidly obese")
 
         label_error.config(text= "")
         label_bmi.pack()
@@ -65,19 +65,19 @@ def bmi_calculator_EU():
         bmi = 703 * w / (h ** 2)
 
         if bmi < 18.5:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are underweight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are underweight")
 
         elif 18.5 <= bmi < 25:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are normal weight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are normal weight")
 
         elif 25 <= bmi < 30:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are overweight")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are overweight")
 
         elif 30 <= bmi < 40:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are obese")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are obese")
 
         elif 40 <= bmi:
-            label_bmi.config(text=f"Your BMI is {bmi} . You are morbidly obese")
+            label_bmi.config(text=f"Your BMI is {round(bmi,2)} . You are morbidly obese")
 
         label_error.config(text="")
         label_bmi.pack()
